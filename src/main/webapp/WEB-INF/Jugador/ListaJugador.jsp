@@ -43,7 +43,7 @@
             <td><%=jugador.getPosicion()%></td>
             <td><%=jugador.getClub()%></td>
             <td><%=jugador.getSeleccion().getNombre()%></td>
-            <td><a onclick="return confirm('¿Esta seguro de borrar?')" class="btn btn-danger" href="<%=request.getContextPath()%>/JugadorServlet?action=eliminarJugador&id=<%=jugador.getId()%>">Borrar</a></td>
+            <td><a class="btn btn-danger" href="<%=request.getContextPath()%>/JugadorServlet?action=eliminarJugador&id=<%=jugador.getId()%>">Borrar</a></td>
         </tr>
         <% } %>
     </table>

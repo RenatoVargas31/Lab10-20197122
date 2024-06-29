@@ -47,7 +47,7 @@
                 }
             %>
             <td><%=club%></td>
-            <td><a onclick="return confirm('¿Esta seguro de borrar?')" class="btn btn-danger" href="<%=request.getContextPath()%>/EstadioServlet?action=eliminarEstadio&id=<%=estadio.getId()%>">Borrar</a></td>
+            <td><a class="btn btn-danger" href="<%=request.getContextPath()%>/EstadioServlet?action=eliminarEstadio&id=<%=estadio.getId()%>">Borrar</a></td>
         </tr>
         <% } %>
     </table>
